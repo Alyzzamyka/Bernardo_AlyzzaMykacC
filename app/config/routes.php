@@ -43,22 +43,15 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 |
 */
 
-<?php
-
-// Default route -> Movies list agad
 $router->get('/', 'MoviesController::index');
 
-// Movies routes
-
 $router->match('movies/create', 'MoviesController::create', ['GET','POST']);
-$router->match('movies/update/{id}', 'MoviesController::update', ['GET','POST']);
-$router->get('movies/delete/{id}', 'MoviesController::delete');
-$router->get('movies/soft-delete/{id}', 'MoviesController::soft_delete');
-$router->get('movies/restore/{id}', 'MoviesController::restore');
-
-
-
-
+$router->get('movies', 'MoviesController::index'); 
+$router->match('movies/create', 'MoviesController::create', ['GET','POST']); 
+$router->match('movies/update/{id}', 'MoviesController::update', ['GET','POST']); 
+$router->get('movies/delete/{id}', 'MoviesController::delete'); 
+$router->get('movies/soft-delete/{id}', 'MoviesController::soft_delete'); 
+$router->get('movies/restore/{id}', 'MoviesController::restore'); 
 
 
 
