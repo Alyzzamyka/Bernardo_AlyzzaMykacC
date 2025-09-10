@@ -79,7 +79,7 @@ $config['ENVIRONMENT']             = 'development';
 | WARNING: You MUST set this value!
 |
 */
-$config['base_url'] 				= 'https://github.com/Alyzzamyka/Bernardo_AlyzzaMykacC.git';
+$config['base_url'] 				= 'https://bernardo-alyzzamykacc.onrender.com';
 
 /*
 |--------------------------------------------------------------------------
@@ -298,3 +298,4 @@ $config['csrf_cookie_name']        = 'csrf_cookie_name';
 $config['csrf_expire']             = 7200;
 $config['csrf_regenerate']         = FALSE;
 ?>
+
